@@ -1863,9 +1863,9 @@ class Dialog(wx.Dialog):
             largeursColonnes = ( (largeurContenu-100, 100) )
             dateDuJour = UTILS_Dates.DateEngFr(str(datetime.date.today()))
             if typeListe == "journ" :
-                titre = _(u"Consommations du %s") % UTILS_Dates.DateComplete(min(listeDates))
+                titre = _(u"Présence du %s") % UTILS_Dates.DateComplete(min(listeDates))
             else:
-                titre = _(u"Consommations")
+                titre = _(u"Présence")
             dataTableau.append((titre, _(u"%s\nEdité le %s") % (UTILS_Organisateur.GetNom(), dateDuJour)))
             style = TableStyle([
                     ('BOX', (0,0), (-1,-1), 0.25, colors.black),
